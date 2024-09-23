@@ -3,3 +3,29 @@
 
 --Q4.2
 /* no, because no state has fips of 80*/
+
+--Q 4.3
+/* it works, but can be improved */
+
+--Q 4.5
+/* yes it does/*
+
+Q-- 4.6
+/*
+SELECT n.name, i.income
+FROM income i
+JOIN name n ON i.fips = n.fips
+ORDER BY i.income DESC
+LIMIT 1;
+/*
+
+
+Q-- 4.7
+/* "Find the state with the highest income, store the growth rate in float" was the prompt that i used and it did not work correctly, however DR. Wei's worked. It even didnt work when i told it the growth rate output was always zero it did not fix it. 
+
+
+
+
+Q-- 4.8
+/* it does not always give perfect answers. It failed me the first try i gave it, but once i fixed the problem with the prompt it worked well. 
+
